@@ -71,6 +71,19 @@ const productos= [
     
 ];
 
+// PARA AGREGAR PRODUCTOS, todo entre "" menos PROMOCION -> SI o NO
+/* <- COPIAR Y PEGAR SIN ESTO
+    {
+        nombre: "CAMBIAR",
+        descripcion: "CAMBIAR",
+        imagen: "CAMBIAR",
+        precio: "CAMBIAR",
+        promocion: NO,
+        precio_promo: "CAMBIAR",
+        desc_promo: "CAMBIAR"
+    },
+*/ // <- ESTO TAMPOCO
+
 const m= document.getElementById("mostrar_prod");
 
 productos.forEach( prod => {
