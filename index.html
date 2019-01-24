@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Titulo de la pagina  -->
+    <title>Empresa, la mejor del mercado</title>
+    <!-- Descripción  -->
+    <meta name="description" content="Pagina Web de Empresa, dedicada a los negocios desde años">
+    <!-- Icono de la Pagina  -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- metadatos  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Scripts y CSS  -->
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="src/index.js" defer></script>
+    <script src="src/cargaProductos.js" defer></script>
+    <!-- Uso Bulma y FontAwesome para Maqueteado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <!-- Video de presentación  -->
+    <div class="video-overlay"></div>
+    <video autoplay loop muted>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15309/developer-loop-1920x1080.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Sección de Presentación -->
+    <section class="hero is-primary is-fullheight" id="Inicio">
+        <!-- Barra de Navegación -->
+        <div class="hero-head">
+            <nav class="navbar is-primary" id="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <!-- Logo -->
+                    <a class="navbar-item" href="#Inicio">
+                        <img src="/assets/image/fake_logo_mini.png" width="112" height="28">
+                    </a>
+                    <!--  Boton para desplegar Menu / Solo para moviles  -->
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- Items -->
+                <div id="navbarMenu" class="navbar-menu">
+                    <!-- A la Izquierda -->
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="#Inicio">
+                            Inicio
+                        </a>
+                        <a class="navbar-item" href="#Promocion">
+                            Promociones
+                        </a>
+                        <a class="navbar-item" href="#Productos">
+                            Productos
+                        </a>
+                
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Conozcanos
+                            </a>
+                
+                            <div class="navbar-dropdown has-background-primary">
+                                <a class="navbar-item" href="#Acerca">
+                                    Quienes Somos
+                                </a>
+                                <a class="navbar-item" href="#Contacto">
+                                    Contactenos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- A la Derecha -->
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
+                                    <span class="icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </span>         
+                                </a>
+                                <a class="button is-primary is-outlined is-inverted">
+                                    <span class="icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </span>         
+                                    <strong>Registrarse</strong>
+                                </a>
+                                <a class="button is-primary is-outlined is-inverted">
+                                    <span class="icon">
+                                        <i class="fas fa-user-circle"></i>
+                                    </span> 
+                                    <span>Entrar</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Texto de Presentacion -->
+        <div class="hero-body text-overlay">
+          <div class="container">
+            <!-- Nombre -->
+            <p class="title is-1" id="company_name">
+              Empresa
+            </p>
+            <!-- Descripción -->
+            <p class="subtitle is-3" id="company_description">
+              Compania Lider, con tecnología innovadora, ofrece los mejores productos y servicios del mercado. Nunca verás algo igual.
+            </p>
+          </div>
+        </div>
+    </section>
+    <!-- Promociones -->
+    <section class="hero is-dark is-fullheight-with-navbar themes" id="Promocion">
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title">Promociones</h1>
+                <nav class="level" id="mostrar_promo">
+                    <p class="level-item has-text-centered">
+                            <div class="card">
+                                    <div class="card-image">
+                                      <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                      </figure>
+                                    </div>
+                                    <div class="card-content">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                          </figure>
+                                        </div>
+                                        <div class="media-content">
+                                          <p class="title is-4">John Smith</p>
+                                          <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                      </div>
+                                    </div>
+                                </div>
+                    </p>
+                    <p class="level-item has-text-centered">
+                            <div class="card">
+                                    <div class="card-image">
+                                      <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                      </figure>
+                                    </div>
+                                    <div class="card-content">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                          </figure>
+                                        </div>
+                                        <div class="media-content">
+                                          <p class="title is-4">John Smith</p>
+                                          <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                      </div>
+                                    </div>
+                                </div>
+                    </p>
+                    <p class="level-item has-text-centered">
+                            <div class="card">
+                                    <div class="card-image">
+                                      <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                      </figure>
+                                    </div>
+                                    <div class="card-content">
+                                      <div class="media">
+                                        <div class="media-left">
+                                          <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                          </figure>
+                                        </div>
+                                        <div class="media-content">
+                                          <p class="title is-4">John Smith</p>
+                                          <p class="subtitle is-6">@johnsmith</p>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                                        <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                      </div>
+                                    </div>
+                                </div>
+                    </p>
+                    
+                </nav>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Mas Productos Sección -->
+    <section class="hero is-dark is-fullheight-with-navbar themes" id="Productos">
+        <div class="hero-body">
+            <div class="container">
+            <h1 class="title">Mas Productos</h1>
+                <nav class="level" id="mostrar_prod"></nav>
+            
+            </div>
+        </div>
+    </section>
+    <!-- Acerca Sección -->
+    <section class="hero is-dark is-fullheight-with-navbar themes" id="Acerca">
+        <div class="hero-body">
+            <div class="container">
+            <p class="title">
+                Quienes somos
+            </p>
+            </div>
+        </div>
+    </section>
+    <!-- Contactenos Sección -->
+    <section class="hero is-dark is-fullheight-with-navbar themes" id="Contacto">
+        <div class="hero-body">
+            <div class="container">
+            <p class="title">
+                Contactenos
+            </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <!-- Creditos y links -->
+            <!-- Autor -->
+            <div class="buttons is-centered">
+                <a class="button is-dark is-outlined" href="https://github.com/gastonpereyra" title="Autor">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Gaston Pereyra</span>
+                </a>
+                <a class="button is-info is-outlined" href="https://www.facebook.com/gaston.pereyra.1806" title="Autor">
+                    <span>en </span>
+                    <span class="icon">
+                      <i class="fab fa-facebook"></i>
+                    </span>
+                </a> 
+                <a class="button is-info is-outlined" href="https://twitter.com/gastonpereyra" title="Autor">
+                    <span>en </span>
+                    <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+                <a class="button is-info is-outlined" href="https://www.linkedin.com/in/gaston-pereyra/" title="Autor">
+                    <span>en </span>
+                    <span class="icon">
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                  
+                </a>
+            </div>
+            <!-- Hecho con -->
+            <div class="buttons is-centered">
+                <a class="button is-primary is-outlined is-rounded" href="https://bulma.io/" title="Hecho con">
+                  <span class="icon">
+                    <i class="fab fa-blogger-b"></i>
+                  </span>
+                  <span>Bulma</span>
+                </a>
+                <a class="button is-danger is-outlined is-rounded" href="https://www.w3.org/TR/html5/" title="Hecho con">
+                  <span class="icon">
+                    <i class="fab fa-html5"></i>
+                  </span>
+                </a> 
+                <a class="button is-success is-outlined is-rounded" href="https://www.w3.org/Style/CSS/" title="Hecho con">
+                  <span class="icon">
+                    <i class="fab fa-css3"></i>
+                  </span>
+                </a> 
+                <a class="button is-warning is-outlined is-inverted is-rounded" href="https://developer.mozilla.org/es/docs/Web/JavaScript" title="Hecho con">
+                  <span class="icon">
+                    <i class="fab fa-js"></i>
+                  </span>
+                </a>
+                <a class="button is-dark is-outlined is-rounded" href="https://github.com/" title="Autor">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              </div>
+        </div>
+    </footer>
+  </body>
+</html>
