@@ -1,4 +1,3 @@
-var rellax = new Rellax('.rellax');
 // Buscar Elementos
 const navbar = document.getElementById("navbar");
 const promocion = document.getElementById("Promocion");
