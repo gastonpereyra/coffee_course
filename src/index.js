@@ -1,9 +1,5 @@
 // Buscar Elementos
 const navbar = document.getElementById("navbar");
-const promocion = document.getElementById("Promocion");
-const producto = document.getElementById("Productos");
-const acerca = document.getElementById("Acerca");
-const contacto = document.getElementById("Contacto");
 const boton_theme = document.getElementById("theme");
 
 // Convertir REM a Pixel
@@ -49,5 +45,3 @@ const changeLightDarkMode = () => {
         })
     }
 };
-
-fetch('prueba.json').then(r => console.log(r));
