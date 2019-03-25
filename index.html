@@ -31,91 +31,91 @@
     </video>
     <!-- Sección de Presentación -->
     <section class="hero is-coffee is-fullheight" id="Inicio">
-        <!-- Barra de Navegación -->
-        <div class="hero-head">
-            <nav class="navbar is-coffee" id="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <!-- Logo -->
-                    <a class="navbar-item is-size-5" href="#Inicio">
-                        <span>CAFÉ </span>
-                        <img src="assets/image/coffee.svg" width="28" height="28" alt="Logo Compania">
-                        <span> 101</span>
-                    </a>
-                    <!--  Boton para desplegar Menu / Solo para moviles  -->
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <!-- Items -->
-                <div id="navbarMenu" class="navbar-menu">
-                    <!-- A la Izquierda -->
-                    <div class="navbar-start">
-                        <span class="navbar-item ">
-                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5"  href="#Propuesta">
-                            <span class="icon">
-                              <i class="fas fa-handshake"></i>
-                            </span> 
-                            <span>Nuestra Propuesta</span>
-                          </a>
-                        </span>
-                        <span class="navbar-item ">
-                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Cursos">
-                            <span class="icon">
-                                <i class="fas fa-university"></i>
-                            </span> 
-                            <span>Cursos</span>
-                          </a>
-                        </span>
-                        <span class="navbar-item ">
-                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Ubicacion">
-                            <span class="icon">
-                                <i class="fas fa-comments"></i>
-                            </span> 
-                            <span>Comentarios</span> 
-                          </a>
-                        </span>
-                        <span class="navbar-item ">
-                            <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Contacto">
-                              <span class="icon">
-                                  <i class="fas fa-envelope-open-text"></i>
-                              </span> 
-                              <span>Contactanos</span>
-                            </a>
-                        </span>
-                    </div>
-                    <!-- A la Derecha -->
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <!-- Boton para cambiar de "Tema" -->
-                            <div class="buttons">
-                                <a class="button is-coffee is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
-                                    <span class="icon">
-                                        <i class="fas fa-lightbulb"></i>
-                                    </span>         
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Texto de Presentacion -->
-        <div class="hero-body text-overlay has-text-centered">
-          <div class="container">
-            <!-- Nombre -->
-            <h1 class="title is-1" id="NombreCompania">
-                <span>CAFÉ </span>
-                <img src="assets/image/coffee.svg" width="64" height="64">
-                <span> 101</span>
-            </h1>
-            <!-- Descripción -->
-            <h2 class="subtitle is-3" id="DescripciónBreve">
-              Aprende a disfrutar el café
-            </h2>
+      <!-- Barra de Navegación -->
+      <div class="hero-head">
+        <nav class="navbar is-coffee" id="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <!-- Logo -->
+            <a class="navbar-item is-size-5" href="#Inicio">
+              <span>CAFÉ </span>
+              <img src="assets/image/coffee.svg" width="28" height="28" alt="Logo Compania">
+              <span> 101</span>
+            </a>
+            <!--  Boton para desplegar Menu / Solo para moviles  -->
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
+          <!-- Items -->
+          <div id="navbarMenu" class="navbar-menu">
+            <!-- A la Izquierda -->
+            <div class="navbar-start" id="barra_links">
+              <span class="navbar-item">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5"  href="#Propuesta">
+                  <span class="icon">
+                    <i class="fas fa-handshake"></i>
+                  </span> 
+                  <span>Nuestra Propuesta</span>
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Cursos">
+                  <span class="icon">
+                    <i class="fas fa-university"></i>
+                  </span> 
+                  <span>Cursos</span>
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Ubicacion">
+                  <span class="icon">
+                    <i class="fas fa-comments"></i>
+                  </span> 
+                  <span>Comentarios</span> 
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Contacto">
+                  <span class="icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </span> 
+                  <span>Contacto</span>
+                </a>
+              </span>
+            </div>
+            <!-- A la Derecha -->
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <!-- Boton para cambiar de "Tema" -->
+                <div class="buttons">
+                  <a class="button is-coffee is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
+                    <span class="icon">
+                      <i class="fas fa-lightbulb"></i>
+                    </span>         
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Texto de Presentacion -->
+      <div class="hero-body text-overlay has-text-centered">
+        <div class="container">
+          <!-- Nombre -->
+          <h1 class="title is-1" id="NombreCompania">
+            <span>CAFÉ </span>
+            <img src="assets/image/coffee.svg" width="64" height="64">
+            <span> 101</span>
+          </h1>
+          <!-- Descripción -->
+          <h2 class="subtitle is-3" id="DescripciónBreve">
+            Aprende a disfrutar el café
+          </h2>
         </div>
+      </div>
     </section>
     <!-- Propuesta -->
     <section class="hero is-coffee is-fullheight themes" id="Propuesta">
@@ -565,7 +565,7 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h2 class="title is-1 is-spaced button is-light is-inverted is-outlined themes">
-            <u>Encontremonos en ...</u>
+            <u>Encontranos en ...</u>
           </h2>
           <!-- Lista de Contactos -->
           <div class="columns is-multiline is-centered">
