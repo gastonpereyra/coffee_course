@@ -1,0 +1,24 @@
+{
+  "secciones": [
+    {
+      "titulo" : "Nuestra Propuesta",
+      "link": "propuesta",
+      "icono" : "fas fa-handshake"
+    },
+    {
+      "titulo" : "Cursos",
+      "link": "cursos",
+      "icono" : "fas fa-university"
+    },
+    {
+      "titulo" : "Comentarios",
+      "link": "comentarios",
+      "icono" : "fas fa-comments"
+    },
+    {
+      "titulo" : "Encontranos",
+      "link": "contacto",
+      "icono" : "fas fa-envelope-open-text"
+    }
+  ]
+}
