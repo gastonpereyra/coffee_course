@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- metadatos  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo de la pagina  -->
+    <title>Café-101</title>
+    <!-- Descripción  -->
+    <meta name="description" content="Pagina Web de Cursos para hacer Café, falsos">
+    <!-- Icono de la Pagina  -->
+    <link rel="shortcut icon" href="assets/image/coffee.svg" type="image/x-icon">
+    <link rel="icon" href="assets/image//coffee.svg" type="image/x-icon">
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet"> 
+    <!-- Scripts y CSS  -->
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="src/index.js" defer></script>
+    <!-- Uso Bulma y FontAwesome para Maqueteado -->
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Video de presentación  -->
+    <div class="video-overlay"></div>
+    <video autoplay loop muted>
+        <source src="assets/video/coffee.mp4" type="video/webm">
+        <!-- Your browser does not support the video tag. -->
+        <!-- Video by Madison Inouye (@mdsnmdsnmdsn) from Pexels.-->
+    </video>
+    <!-- Sección de Presentación -->
+    <section class="hero is-coffee is-fullheight" id="Inicio">
+      <!-- Barra de Navegación -->
+      <div class="hero-head">
+        <nav class="navbar is-coffee" id="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <!-- Logo -->
+            <a class="navbar-item is-size-5" href="#Inicio">
+              <span>CAFÉ </span>
+              <img src="assets/image/coffee.svg" width="28" height="28" alt="Logo Compania">
+              <span> 101</span>
+            </a>
+            <!--  Boton para desplegar Menu / Solo para moviles  -->
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- Items -->
+          <div id="navbarMenu" class="navbar-menu">
+            <!-- A la Izquierda -->
+            <div class="navbar-start" id="barra_links">
+              <span class="navbar-item">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5"  href="#Propuesta">
+                  <span class="icon">
+                    <i class="fas fa-handshake"></i>
+                  </span> 
+                  <span>Nuestra Propuesta</span>
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Cursos">
+                  <span class="icon">
+                    <i class="fas fa-university"></i>
+                  </span> 
+                  <span>Cursos</span>
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Ubicacion">
+                  <span class="icon">
+                    <i class="fas fa-comments"></i>
+                  </span> 
+                  <span>Comentarios</span> 
+                </a>
+              </span>
+              <span class="navbar-item ">
+                <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Contacto">
+                  <span class="icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </span> 
+                  <span>Contacto</span>
+                </a>
+              </span>
+            </div>
+            <!-- A la Derecha -->
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <!-- Boton para cambiar de "Tema" -->
+                <div class="buttons">
+                  <a class="button is-coffee is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
+                    <span class="icon">
+                      <i class="fas fa-lightbulb"></i>
+                    </span>         
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Texto de Presentacion -->
+      <div class="hero-body text-overlay has-text-centered">
+        <div class="container">
+          <!-- Nombre -->
+          <h1 class="title is-1" id="NombreCompania">
+            <span>CAFÉ </span>
+            <img src="assets/image/coffee.svg" width="64" height="64">
+            <span> 101</span>
+          </h1>
+          <!-- Descripción -->
+          <h2 class="subtitle is-3" id="DescripciónBreve">
+            Aprende a disfrutar el café
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- Propuesta -->
+    <section class="hero is-coffee is-fullheight themes" id="Propuesta">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-coffee is-inverted is-outlined themes"><u>Nuestra Propuesta</u></h2>
+          <!-- Barra con información -->
+          <nav class="columns is-desktop is-centered is-vcentered">
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-mortar-pestle"></i>
+                </span>
+                <p class="is-size-3"><u>Tecnicas Innovadoras</u></p>
+                <p class="is-size-4">Nuestros intructoros cuentan con conocimientos de las ultimas tecnicas, de todas partes del mundo, asi como también de las más tradicionales.  </p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-microscope"></i>
+                </span>
+                <p class="is-size-3"><u>Ultima tecnología</u></p>
+                <p class="is-size-4">En nuestro centro de capacitación contamos con los mejores expertos y ultima tecnología para hacerte a vos todo un profesional.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-seedling"></i>
+                </span>
+                <p class="is-size-3"><u>Los mejores Granos</u></p>
+                <p class="is-size-4">No hay buen café sin la materia prima, y en nuestros almacenes contamos con la mayor variedad y cantidad de granos de café listos para que lo disfrutes</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-mug-hot"></i>
+                </span>
+                <p class="is-size-3"><u>El Mejor Café</u></p>
+                <p class="is-size-4">No solo vas a poder aprender todo acerca de la elección, preparación y tecnicas también vas a poder disfrutar de los mejores aromas, el mejor café que jamás hayas probado.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-coffee"></i>
+                </span>
+                <p class="is-size-3"><u>Nuestra Tienda</u></p>
+                <p class="is-size-4">En nuestra Tienda vas a poder llevarte todo eso que necesitas para hacerlo en tu casa, en la casa de un amigo, en tu trabajo o donde sea.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-users"></i>
+                </span>
+                <p class="is-size-3"><u>Comunidad</u></p>
+                <p class="is-size-4">Forma parte de una comunidad, asisti a nuestros eventos exclusivos, nuestras charlas informativas, y compartí todo lo que sabes.</p>
+              </div>
+            </p>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- Cursos -->
+    <section class="hero is-light is-fullheight themes" id="Cursos">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-light is-inverted is-outlined themes">
+            <u>Cursos</u>
+          </h2>
+           <!-- Lista de Cursos -->
+          <div class="columns is-tablet is-centered is-vcentered is-multiline">
+            <!-- Cursos sobre Granos -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                      <img src="assets/image/granos.jpg" alt="Foto Granos de Café">
+                  </figure>
+                </div>
+                <div class="card-content has-background-success">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="button is-success is-outlined is-inverted" title="Conozca más">
+                      <span class="icon">
+                        <i class="fas fa-seedling"></i>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-3 has-text-light">Ciencia de Granos</p>
+                    </div>
+                  </div>
+                  <div class="content is-size-5 has-text-light">
+                    Con este curso aprenderá a elegir los mejores granos de café y como mejorarlos, sacarle el mejor provecho.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cursos sobre Tecnicas -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                      <img src="assets/image/tecnicas.jpeg" alt="Foto Herramientas para hacer café">
+                  </figure>
+                </div>
+                <div class="card-content has-background-dark">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="button is-dark is-outlined is-inverted" title="Conozca más">
+                      <span class="icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-3 has-text-light">Técnicas Expertas</p>
+                    </div>
+                  </div>
+                  <div class="content is-size-5 has-text-light">
+                    Con este curso aprenderá las mejores técnicas para cada tipo de café, para cada ocación, sea un experto.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cursos sobre Presentación -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                      <img src="assets/image/presentacion.jpeg" alt="Foto de una hermosa taza de café">
+                  </figure>
+                </div>
+                <div class="card-content has-background-info">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="button is-info is-outlined is-inverted" title="Conozca más">
+                      <span class="icon">
+                        <i class="fas fa-palette"></i>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-3 has-text-light">Arte espumante</p>
+                    </div>
+                  </div>
+                  <div class="content is-size-5 has-text-light">
+                    Con este curso aprenderá a hacer obras de arte con la espuma de café, sea el un artista del café.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cursos sobre Degustación -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                      <img src="assets/image/sommelier.jpeg" alt="Foto de varias tazas Café">
+                  </figure>
+                </div>
+                <div class="card-content has-background-warning">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="button is-warning is-outlined is-inverted" title="Conozca más">
+                      <span class="icon">
+                        <i class="fas fa-mug-hot"></i>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-3 has-text-dark">Sommelier</p>
+                    </div>
+                  </div>
+                  <div class="content is-size-5 has-text-dark">
+                    Aprendá a apreciar los aromas, identificar cada sabor, y diferenciar un buen café de uno exelente.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cursos Completo -->
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                      <img src="assets/image/todo.jpeg" alt="Foto de Café">
+                  </figure>
+                </div>
+                <div class="card-content has-background-danger">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="button is-danger is-outlined is-inverted" title="Conozca más">
+                      <span class="icon">
+                        <i class="fas fa-coffee"></i>
+                      </span>
+                    </div>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-3 has-text-light">Todo Terreno</p>
+                    </div>
+                  </div>
+                  <div class="content is-size-5 has-text-light">
+                    Aprendá todo, conviertasé en un maestro del café, le revelaremos los secretos para ser el mejor, en todo.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Acerca Sección -->
+    <section class="hero is-coffee is-fullheight themes" id="Ubicacion">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-coffee is-inverted is-outlined themes">
+            <u>Comentarios</u>
+          </h2>
+          <!-- Muro con Comentarios -->
+          <!-- Avatars de https://pickaface.net/ -->
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <!-- Comentario -->
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/vivaHoracio.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Horacio Marmol</strong> <small>@vivaHoracio</small>
+                        <br>
+                        Pensaba que sabia todo acerca de las formas de tomar café, pero estaba muy equivocado, me faltaba un monton. Soy muy afortunado en haber encontrado este maravilloso lugar, ahora puedo decir que soy un verdadero experto. 
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- Comentario -->
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/juanPerez_02.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Juan Perez</strong> <small>@juanPerez_02</small>
+                        <br>
+                        El lugar es esplendido, los profesores son lo más, muy recomendado. Ya estoy anotado para el próximo evento. Quiero que sea YA!!! 
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- Comentario -->
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/soySuper.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Yoana Super</strong> <small>@soySuper</small>
+                        <br>
+                        En una convención me encontre con un grupo de personas que no paraban de hablar de café, y eso provoco que no pudiera pensar en otra cosa, fui a la sede central, me anoté en su curso y aqui estoy tomando el mejor café
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <!-- Comentario -->
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/leiaSky.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Leia Sky</strong> <small>@noEsaLeia</small>
+                        <br>
+                        Los encontre por casualidad, el aroma inundaba todo el lugar, no pude contenerme, es como si la fuerza me guiara hacia allí, era el destino.
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- Comentario -->
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/juanSEnieves.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Juanse Nieves</strong> <small>@johnSEnieves</small>
+                        <br>
+                        Busque en todos lugares posibles, de Norte a Sur en busca de café de calidad, y por fin lo encontré, todo en un solo lugar, si queres la mejor calidad tenés que ir.
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- Comentario -->
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <article class="media">
+                  <figure class="media-left">
+                    <p class="image is-64x64">
+                      <img class="is-rounded" src="assets/image/angieYoli.png" alt="Avatar">
+                    </p>
+                  </figure>
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <strong>Angeles Yoli</strong> <small>@AngieYoli</small>
+                        <br>
+                        No sabes lo que es tomar café hasta que llegas y aprendes, es una experiencia religiosa, te cambia la vida, CREEME!
+                        <br><b class="has-text-link">#Café101</b>
+                      </p>
+                    </div>
+                    <nav class="level is-mobile">
+                      <div class="level-left">
+                        <a class="level-item" title="Responder">
+                          <span class="icon is-small has-text-link"><i class="fas fa-reply"></i></span>
+                        </a>
+                        <a class="level-item" title="Compartir">
+                          <span class="icon is-small has-text-success"><i class="fas fa-retweet"></i></span>
+                        </a>
+                        <a class="level-item" title="Me Gusta">
+                          <span class="icon is-small has-text-danger"><i class="fas fa-heart"></i></span>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contactenos Sección -->
+    <section class="hero is-light is-fullheight themes" id="Contacto">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h2 class="title is-1 is-spaced button is-light is-inverted is-outlined themes">
+            <u>Encontranos en ...</u>
+          </h2>
+          <!-- Lista de Contactos -->
+          <div class="columns is-multiline is-centered">
+            <div class="column is-one-third">
+              <div class="slot is-light themes">
+                <div class="content is-large">
+                  <h4 class="title"><u>Redes Sociales</u></h4>
+                  <div class="buttons is-centered">
+                    <!-- Twitter -->
+                    <a class="button is-info is-large" href="https://twitter.com/" target="_blank" title="Twtitter">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                    </a>
+                    <!-- Instagram -->
+                    <a class="button is-primary is-inverted is-large" href="https://www.instagram.com/" target="_blank" title="Instagram">
+                      <span class="icon">
+                        <i class="fab fa-instagram"></i>
+                      </span>
+                    </a>
+                    <!-- Facebook -->
+                    <a class="button is-link is-large" href="https://www.facebook.com/" target="_blank" title="Facebook">
+                      <span class="icon">
+                        <i class="fab fa-facebook"></i>
+                      </span>
+                    </a> 
+                    <!-- Linkedin -->
+                    <a class="button is-link is-inverted is-large" href="https://www.linkedin.com/" target="_blank" title="Linkedin">
+                      <span class="icon">
+                        <i class="fab fa-linkedin"></i>
+                      </span>
+                    </a>
+                    <!-- Google -->
+                    <a class="button is-danger is-large" href="http://www.google.com/" target="_blank" title="Google">
+                      <span class="icon">
+                        <i class="fab fa-google-plus-g"></i>
+                      </span>
+                    </a>
+                    <!-- Telegram -->
+                    <a class="button is-info is-inverted is-large" href="https://web.telegram.org/" target="_blank" title="Telegram">
+                      <span class="icon">
+                        <i class="fab fa-telegram"></i>
+                      </span>
+                    </a>
+                    <!-- Discord -->
+                    <a class="button is-warning is-inverted is-large" href="https://discordapp.com/" target="_blank" title="Discord">
+                      <span class="icon">
+                        <i class="fab fa-discord"></i>
+                      </span>
+                    </a>
+                    <!-- Foursquare -->
+                    <a class="button is-danger is-inverted is-large" href="https://es.foursquare.com/" target="_blank" title="Foursquare">
+                      <span class="icon">
+                        <i class="fab fa-foursquare"></i>
+                      </span>
+                    </a>
+                    <!-- Medium -->
+                    <a class="button is-dark is-large" href="https://medium.com/" target="_blank" title="Medium">
+                      <span class="icon">
+                        <i class="fab fa-medium"></i>
+                      </span>
+                    </a>
+                    <!-- Skype -->
+                    <a class="button is-info is-inverted is-large" href="https://www.skype.com/" target="_blank" title="Skype">
+                      <span class="icon">
+                        <i class="fab fa-skype"></i>
+                      </span>
+                    </a>
+                    <!-- Snapchat -->
+                    <a class="button is-warning is-large" href="https://www.snapchat.com/l/es/" target="_blank" title="Snapchat">
+                      <span class="icon">
+                        <i class="fab fa-snapchat"></i>
+                      </span>
+                    </a>
+                    <!-- Yelp -->
+                    <a class="button is-danger is-inverted is-large" href="https://www.yelp.com/" target="_blank" title="Yelp">
+                      <span class="icon">
+                        <i class="fab fa-yelp"></i>
+                      </span>
+                    </a>
+                    <!-- Whatsapp -->
+                    <a class="button is-success is-large" href="https://www.whatsapp.com/" target="_blank" title="Whatsapp">
+                      <span class="icon">
+                        <i class="fab fa-whatsapp "></i>
+                      </span>
+                    </a>
+                    <!-- Reddit -->
+                    <a class="button is-danger is-inverted is-large" href="https://www.reddit.com/" target="_blank" title="Reddit">
+                      <span class="icon">
+                        <i class="fab fa-reddit"></i>
+                      </span>
+                    </a>
+                    <!-- Youtube -->
+                    <a class="button is-danger is-large" href="http://www.youtube.com/" target="_blank" title="YouTube">
+                      <span class="icon">
+                        <i class="fab fa-youtube "></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sedes -->
+            <div class="column is-half">
+              <div class="slot is-light themes">
+                <div class="content is-large">
+                  <h4 class="title">
+                    <u>Sedes</u>
+                  </h4>
+                  <div class="tags has-addons is-centered">
+                    <!-- Buenos Aires -->
+                    <span class="tag is-primary is-large">
+                      <span class="icon is-small"><i class="fas fa-map-marker-alt"></i></span>
+                    </span>
+                    <span class="tag is-dark is-large">Buenos Aires</span>
+                    <span class="tag is-warning is-large">MongoDB 3522</span>
+                    <span class="tag is-info is-large">(011)-4855-8844</span>
+                  </div>
+                  <!-- Cordoba -->
+                  <div class="tags has-addons is-centered">
+                    <span class="tag is-primary is-large">
+                      <span class="icon is-small"><i class="fas fa-map-marker-alt"></i></span>
+                    </span>
+                    <span class="tag is-dark is-large">Córdoba</span>
+                    <span class="tag is-warning is-large">GraphQL 522</span>
+                    <span class="tag is-info is-large">(351)-455-8844</span>
+                  </div>
+                  <!-- Neuquen -->
+                  <div class="tags has-addons is-centered">
+                    <span class="tag is-primary is-large">
+                      <span class="icon is-small"><i class="fas fa-map-marker-alt"></i></span>
+                    </span>
+                    <span class="tag is-dark is-large">Neuquén</span>
+                    <span class="tag is-warning is-large">Dart 5122</span>
+                    <span class="tag is-info is-large">(299)-655-8844</span>
+                  </div>
+                  <!-- Usuhaia -->
+                  <div class="tags has-addons is-centered">
+                    <span class="tag is-primary is-large">
+                      <span class="icon is-small"><i class="fas fa-map-marker-alt"></i></span>
+                    </span>
+                    <span class="tag is-dark is-large">Usuhaia</span>
+                    <span class="tag is-warning is-large">Ruby 225</span>
+                    <span class="tag is-info is-large">(2901)-455-8844</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer has-background-dark">
+      <div class="content has-text-centered">
+        <!-- Creditos y links -->
+        <div class="title is-size-5 has-text-light" href="#Inicio">
+            <span>CAFÉ </span>
+            <img src="assets/image/coffee.svg" width="28" height="28" alt="Logo Compania">
+            <span> 101</span>
+          </div>
+        <p class="has-text-light">
+          Copyright 2019. Todos los datos proporcionados en esta página son falsos, inventados, cualquier similitud es pura coincidencia. Solo a modo de Ejemplo y demostración.
+        </p>
+        <!-- Autor -->
+        <div class="buttons is-centered">
+          <a class="button is-dark is-outlined is-inverted" href="https://github.com/gastonpereyra" target="_blank" title="Autor">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Gaston Pereyra</span>
+          </a>
+          <a class="button is-link is-outlined" href="https://www.facebook.com/gaston.pereyra.1806" target="_blank" title="Autor en Facebook">
+            <span class="icon">
+              <i class="fab fa-facebook"></i>
+            </span>
+          </a> 
+          <a class="button is-info is-outlined" href="https://twitter.com/gastonpereyra" target="_blank" title="Autor en Twtitter">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </a>
+          <a class="button is-link is-outlined" href="https://www.linkedin.com/in/gaston-pereyra/" target="_blank" title="Autor en linkedin">
+            <span class="icon">
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a>
+        </div>
+        <!-- Hecho con -->
+        <div class="buttons is-centered">
+          <a class="button is-primary is-outlined is-rounded" href="https://bulma.io/" target="_blank" title="Hecho con Bulma">
+            <span class="icon">
+              <i class="fab fa-blogger-b"></i>
+            </span>
+            <span>Bulma</span>
+          </a>
+          <a class="button is-danger is-outlined is-rounded" href="https://www.w3.org/TR/html5/" target="_blank" title="Hecho con HTML5">
+            <span class="icon">
+              <i class="fab fa-html5"></i>
+            </span>
+          </a> 
+          <a class="button is-success is-outlined is-rounded" href="https://www.w3.org/Style/CSS/" ttarget="_blank" itle="Hecho con CSS3">
+            <span class="icon">
+              <i class="fab fa-css3"></i>
+            </span>
+          </a> 
+          <a class="button is-warning is-outlined is-rounded" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" title="Hecho con Javascript">
+            <span class="icon">
+              <i class="fab fa-js"></i>
+            </span>
+          </a>
+          <a class="button is-dark is-outlined is-inverted is-rounded" href="https://github.com/gastonpereyra/coffee_course" target="_blank" title="Repositorio en Github">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </a>
+          <a class="button is-info is-outlined is-rounded" href="https://fontawesome.com/" target="_blank" title="Iconos de Font Awesome">
+            <span class="icon">
+              <i class="fab fa-font-awesome"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
