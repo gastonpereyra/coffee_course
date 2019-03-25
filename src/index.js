@@ -49,3 +49,5 @@ const changeLightDarkMode = () => {
         })
     }
 };
+
+fetch('prueba.json').then(r => console.log(r));
