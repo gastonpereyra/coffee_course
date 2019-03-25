@@ -16,10 +16,10 @@ window.onscroll = () => {
     if (document.body.scrollTop > (window.innerHeight-convertRemToPixels(3.5)) || 
         document.documentElement.scrollTop > (window.innerHeight-convertRemToPixels(3.5))) {
             navbar.classList.add('is-fixed-top');
-            navbar.classList.add('has-background-primary');
+            navbar.classList.add('has-background-coffee');
     } else {
             navbar.classList.remove('is-fixed-top');
-            navbar.classList.remove('has-background-primary');
+            navbar.classList.remove('has-background-coffee');
     }
 };
 
@@ -44,8 +44,8 @@ const changeLightDarkMode = () => {
     const $themes = Array.prototype.slice.call(document.querySelectorAll('.themes'), 0);
     if ($themes.length > 0) {
         $themes.forEach( sections => {
+            sections.classList.toggle('is-coffee');
             sections.classList.toggle('is-light');
-            sections.classList.toggle('is-dark');
         })
     }
 };
