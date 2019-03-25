@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="src/index.js" defer></script>
     <!-- Uso Bulma y FontAwesome para Maqueteado -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="styles/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Video de presentación  -->
@@ -30,14 +30,16 @@
         <!-- Video by Madison Inouye (@mdsnmdsnmdsn) from Pexels.-->
     </video>
     <!-- Sección de Presentación -->
-    <section class="hero is-primary is-fullheight" id="Inicio">
+    <section class="hero is-coffee is-fullheight" id="Inicio">
         <!-- Barra de Navegación -->
         <div class="hero-head">
-            <nav class="navbar is-primary" id="navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-coffee" id="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <!-- Logo -->
-                    <a class="navbar-item" href="#Inicio">
-                        <img src="assets/image/fake_logo_mini.png" width="112" height="28">
+                    <a class="navbar-item is-size-5" href="#Inicio">
+                        <span>CAFÉ </span>
+                        <img src="assets/image/coffee.svg" width="28" height="28" alt="Logo Compania">
+                        <span> 101</span>
                     </a>
                     <!--  Boton para desplegar Menu / Solo para moviles  -->
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
@@ -50,51 +52,48 @@
                 <div id="navbarMenu" class="navbar-menu">
                     <!-- A la Izquierda -->
                     <div class="navbar-start">
-                        <a class="navbar-item" href="#Inicio">
-                            Inicio
-                        </a>
-                        <a class="navbar-item" href="#Promocion">
-                            Promociones
-                        </a>
-                        <a class="navbar-item" href="#Productos">
-                            Productos
-                        </a>
-                
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">
-                                Conozcanos
+                        <span class="navbar-item ">
+                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5"  href="#Propuesta">
+                            <span class="icon">
+                              <i class="fas fa-handshake"></i>
+                            </span> 
+                            <span>Nuestra Propuesta</span>
+                          </a>
+                        </span>
+                        <span class="navbar-item ">
+                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Cursos">
+                            <span class="icon">
+                                <i class="fas fa-university"></i>
+                            </span> 
+                            <span>Cursos</span>
+                          </a>
+                        </span>
+                        <span class="navbar-item ">
+                          <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Ubicacion">
+                            <span class="icon">
+                                <i class="fas fa-comments"></i>
+                            </span> 
+                            <span>Comentarios</span> 
+                          </a>
+                        </span>
+                        <span class="navbar-item ">
+                            <a class="button is-coffee is-outlined is-inverted is-rounded is-size-5" href="#Contacto">
+                              <span class="icon">
+                                  <i class="fas fa-envelope-open-text"></i>
+                              </span> 
+                              <span>Contactanos</span>
                             </a>
-                
-                            <div class="navbar-dropdown has-background-primary">
-                                <a class="navbar-item" href="#Acerca">
-                                    Quienes Somos
-                                </a>
-                                <a class="navbar-item" href="#Contacto">
-                                    Contactenos
-                                </a>
-                            </div>
-                        </div>
+                        </span>
                     </div>
                     <!-- A la Derecha -->
                     <div class="navbar-end">
                         <div class="navbar-item">
+                            <!-- Boton para cambiar de "Tema" -->
                             <div class="buttons">
-                                <a class="button is-primary is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
+                                <a class="button is-coffee is-outlined is-inverted is-rounded" id="theme" onclick="changeLightDarkMode()">
                                     <span class="icon">
                                         <i class="fas fa-lightbulb"></i>
                                     </span>         
-                                </a>
-                                <a class="button is-primary is-outlined is-inverted">
-                                    <span class="icon">
-                                        <i class="fas fa-user-plus"></i>
-                                    </span>         
-                                    <strong>Registrarse</strong>
-                                </a>
-                                <a class="button is-primary is-outlined is-inverted">
-                                    <span class="icon">
-                                        <i class="fas fa-user-circle"></i>
-                                    </span> 
-                                    <span>Entrar</span>
                                 </a>
                             </div>
                         </div>
@@ -103,124 +102,120 @@
             </nav>
         </div>
         <!-- Texto de Presentacion -->
-        <div class="hero-body text-overlay">
+        <div class="hero-body text-overlay has-text-centered">
           <div class="container">
             <!-- Nombre -->
-            <p class="title is-1" id="company_name">
-              Empresa
-            </p>
+            <h1 class="title is-1" id="NombreCompania">
+                <span>CAFÉ </span>
+                <img src="assets/image/coffee.svg" width="64" height="64">
+                <span> 101</span>
+            </h1>
             <!-- Descripción -->
-            <p class="subtitle is-3" id="company_description">
-              Compania Lider, con tecnología innovadora, ofrece los mejores productos y servicios del mercado. Nunca verás algo igual.
-            </p>
+            <h2 class="subtitle is-3" id="DescripciónBreve">
+              Aprende a disfrutar el café
+            </h2>
           </div>
         </div>
     </section>
-    <!-- Mas Productos Sección -->
-    <section class="hero is-dark is-fullheight themes" id="Productos">
-        <div class="hero-body">
-            <div class="container">
-                <p class="title is-2">Que Hacemos</p>
-                <nav class="level box has-background-info">
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading has-text-light"><b>Actividad 1</b></p>
-                        <p class="title has-text-light">
-                            <span class="icon">
-                                <i class="fas fa-globe "></i>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading has-text-light"><b>Actividad 2</b></p>
-                        <p class="title has-text-light">
-                            <span class="icon">
-                                <i class="fas fa-chart-area "></i>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading has-text-light"><b>Actividad 3</b></p>
-                        <p class="title has-text-light">
-                            <span class="icon">
-                                <i class="fas fa-project-diagram "></i>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered">
-                      <div>
-                        <p class="heading has-text-light"><b>Actividad 4</b></p>
-                        <p class="title has-text-light">
-                            <span class="icon">
-                                <i class="fas fa-home"></i>
-                            </span>
-                        </p>
-                      </div>
-                    </div>
-                  </nav>
-            </div>
+    <!-- Propuesta -->
+    <section class="hero is-coffee is-fullheight themes" id="Propuesta">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-coffee is-inverted is-outlined themes"><u>Nuestra Propuesta</u></h2>
+          <!-- Barra con información -->
+          <nav class="columns is-desktop is-centered is-vcentered">
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-mortar-pestle"></i>
+                </span>
+                <p class="is-size-3"><u>Tecnicas Innovadoras</u></p>
+                <p class="is-size-4">Nuestros intructoros cuentan con conocimientos de las ultimas tecnicas, de todas partes del mundo, asi como también de las más tradicionales.  </p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-microscope"></i>
+                </span>
+                <p class="is-size-3"><u>Ultima tecnología</u></p>
+                <p class="is-size-4">En nuestro centro de capacitación contamos con los mejores expertos y ultima tecnología para hacerte a vos todo un profesional.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-seedling"></i>
+                </span>
+                <p class="is-size-3"><u>Los mejores Granos</u></p>
+                <p class="is-size-4">No hay buen café sin la materia prima, y en nuestros almacenes contamos con la mayor variedad y cantidad de granos de café listos para que lo disfrutes</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-mug-hot"></i>
+                </span>
+                <p class="is-size-3"><u>El Mejor Café</u></p>
+                <p class="is-size-4">No solo vas a poder aprender todo acerca de la elección, preparación y tecnicas también vas a poder disfrutar de los mejores aromas, el mejor café que jamás hayas probado.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-coffee"></i>
+                </span>
+                <p class="is-size-3"><u>Nuestra Tienda</u></p>
+                <p class="is-size-4">En nuestra Tienda vas a poder llevarte todo eso que necesitas para hacerlo en tu casa, en la casa de un amigo, en tu trabajo o donde sea.</p>
+              </div>
+            </p>
+            <p class="column has-text-centered">
+              <div class="content">
+                <span class="icon is-size-3">
+                  <i class="fas fa-users"></i>
+                </span>
+                <p class="is-size-3"><u>Comunidad</u></p>
+                <p class="is-size-4">Forma parte de una comunidad, asisti a nuestros eventos exclusivos, nuestras charlas informativas, y compartí todo lo que sabes.</p>
+              </div>
+            </p>
+          </nav>
         </div>
+      </div>
     </section>
     <!-- Promociones -->
-    <section class="hero is-dark is-fullheight themes" id="Promocion">
-        <div class="hero-body">
-            <div class="container">
-                <p class="title is-2">Promociones</p>
-                <p class="subtitle is-4">Te acercamos nuestras mejores promociones para que disfrutes más de nuestros productos</p>
-                <br><br>
-                <div class="columns is-centered is-vcentered">
-                    <div class="column is-half">
-                        <article class="message is-large is-light themes">
-                            <div class="message-header">
-                              <p>Nombre</p>
-                              <p class="tags has-addons">
-                                    <span class="tag is-dark is-large">$</span>
-                                    <span class="tag is-success is-large">255.5</span>
-                                </p>
-                            </div>
-                            <div class="message-body">
-                                Descripción larga del producto en cuestion.<br>
-                                Que tipo de producto es.<br>
-                                Detallada lo mejor posible<br>
-                                En lo posible 4 lineas                                
-                            </div>
-                          </article>
-                    </div>
-                    <div class="column is-one-quarter box">
-                        <figure class="image is-5by4">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png">
-                        </figure>
-                    </div>
-                </div>
-            </div>
+    <section class="hero is-light is-fullheight themes" id="Cursos">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-light is-inverted is-outlined themes">
+            <u>Cursos</u>
+          </h2>
+                
         </div>
+      </div>
     </section>
     
     <!-- Acerca Sección -->
-    <section class="hero is-dark is-fullheight themes" id="Acerca">
-        <div class="hero-body">
-            <div class="container">
-            <p class="title">
-                Quienes somos
-            </p>
-            
-            </div>
-        </div>
+    <section class="hero is-coffee is-fullheight themes" id="Ubicacion">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- Titulo de la Sección -->
+          <h2 class="title is-1 is-spaced button is-coffee is-inverted is-outlined themes">
+            <u>Comentarios</u>
+          </h2>
+          </div>
+      </div>
     </section>
     <!-- Contactenos Sección -->
-    <section class="hero is-dark is-fullheight themes" id="Contacto">
-        <div class="hero-body">
-            <div class="container">
-            <p class="title">
-                Contactenos
-            </p>
-            </div>
+    <section class="hero is-light is-fullheight themes" id="Contacto">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h2 class="title is-1 is-spaced button is-light is-inverted is-outlined themes">
+              <u>Contactanos</u>
+          </h2>
         </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
